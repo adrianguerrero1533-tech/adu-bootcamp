@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free ADU Bootcamp — Adrian "Stretch" Guerrero</title>
+<meta property="og:title" content="Free Home Buyer & ADU Bootcamp — Watch Now">
+<meta property="og:description" content="How Everyday California Families Are Buying Homes & Eliminating Their Mortgage Using The ADU Method. Free training with Adrian 'Stretch' Guerrero.">
+<meta property="og:type" content="website">
+<meta name="description" content="Free Home Buyer & ADU Bootcamp with Adrian Stretch Guerrero. Learn how California families buy homes and eliminate their mortgage using The ADU Method.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
+.urgency-bar{background:#C9921A;padding:10px 20px;text-align:center;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.85;}}
+.urgency-bar p{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:800;color:#0E2A38;letter-spacing:1px;}
+.header{background:linear-gradient(180deg,#0E2A38 0%,#1A4A57 100%);border-bottom:4px solid #C9921A;padding:32px 20px;text-align:center;}
+.header-eyebrow{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#C9921A;margin-bottom:12px;display:block;}
+.header h1{font-family:'Montserrat',sans-serif;font-size:clamp(22px,5vw,40px);font-weight:900;color:#FFFFFF;line-height:1.2;margin-bottom:14px;}
+.header h1 em{color:#C9921A;font-style:normal;}
+.header-sub{font-size:15px;color:#8BBFCB;line-height:1.75;max-width:620px;margin:0 auto 24px;}
+.header-sub strong{color:#FFFFFF;}
+.countdown-wrap{background:#164050;border:2px solid #C9921A;max-width:480px;margin:0 auto 0;padding:16px 20px;text-align:center;}
+.countdown-label{font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#C9921A;margin-bottom:10px;display:block;}
+.countdown-timer{display:flex;justify-content:center;gap:16px;}
+.cd-block{text-align:center;}
+.cd-num{font-family:'Bebas Neue',cursive;font-size:44px;color:#FFFFFF;line-height:1;display:block;}
+.cd-unit{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:#8BBFCB;letter-spacing:2px;text-transform:uppercase;}
+.cd-sep{font-family:'Bebas Neue',cursive;font-size:44px;color:#C9921A;line-height:1;}
+.form-section{background:linear-gradient(180deg,#1A4A57 0%,#164050 100%);padding:40px 20px 52px;}
+.form-wrap{max-width:500px;margin:0 auto;background:#f5fbfd;border:2px solid #1E6B8A;border-top:5px solid #C9921A;padding:36px 32px;box-shadow:0 20px 60px rgba(0,0,0,0.5);}
+.form-headline{font-family:'Montserrat',sans-serif;font-size:19px;font-weight:900;color:#1A4A57;text-align:center;margin-bottom:6px;line-height:1.3;}
+.form-sub{font-size:13px;color:#1E6B8A;text-align:center;font-style:italic;margin-bottom:22px;}
+.form-group{margin-bottom:14px;}
+.form-group label{display:block;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#1A4A57;margin-bottom:5px;}
+.form-group input{width:100%;background:#fff;border:2px solid #b8d8e0;color:#0E2A38;padding:14px 16px;font-size:16px;outline:none;font-family:'Open Sans',sans-serif;transition:border 0.2s;-webkit-appearance:none;}
+.form-group input:focus{border-color:#C9921A;}
+.form-group input::placeholder{color:#adc5cc;}
+.submit-btn{width:100%;background:linear-gradient(180deg,#DFA030 0%,#C9921A 100%);border:none;border-bottom:5px solid #876411;color:#0E2A38;font-family:'Montserrat',sans-serif;font-weight:900;font-size:15px;letter-spacing:1px;text-transform:uppercase;padding:20px 24px;cursor:pointer;margin-top:8px;animation:btnPulse 3s infinite;}
+@keyframes btnPulse{0%,100%{box-shadow:0 0 0 0 rgba(201,146,26,0.4);}50%{box-shadow:0 0 0 12px rgba(201,146,26,0);}}
+.submit-btn:hover{opacity:0.92;}
+.privacy{font-size:11px;color:#8a9ea5;text-align:center;margin-top:12px;line-height:1.5;}
+.trust-icons{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:16px;}
+.trust-item{font-size:12px;color:#8BBFCB;font-family:'Montserrat',sans-serif;font-weight:600;}
+.success-box{display:none;padding:28px;text-align:center;}
+.success-box h3{font-family:'Bebas Neue',cursive;font-size:38px;letter-spacing:2px;color:#C9921A;margin-bottom:10px;}
+.success-box p{font-size:14px;color:#1A4A57;line-height:1.75;}
+.proof-bar{background:#0E2A38;border-top:3px solid #C9921A;border-bottom:3px solid #C9921A;padding:16px 20px;text-align:center;}
+.proof-bar p{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:#C9921A;}
+.proof-bar span{color:#8BBFCB;font-weight:400;}
+.data-section{background:#0E2A38;border-top:4px solid #C9921A;border-bottom:4px solid #C9921A;padding:52px 20px;text-align:center;}
+.data-inner{max-width:680px;margin:0 auto;}
+.section-eyebrow{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:800;letter-spacing:4px;text-transform:uppercase;color:#C9921A;display:block;margin-bottom:10px;}
+.big-number{font-family:'Bebas Neue',cursive;font-size:clamp(64px,12vw,96px);letter-spacing:4px;color:#C9921A;line-height:1;}
+.big-number-label{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;color:#8BBFCB;letter-spacing:1px;margin-bottom:20px;}
+.data-desc{font-size:15px;color:#FFFFFF;line-height:1.8;max-width:560px;margin:0 auto 28px;}
+.data-desc strong{color:#C9921A;}
+.what-section{background:#1A4A57;padding:52px 20px;}
+.what-inner{max-width:680px;margin:0 auto;}
+.section-title{font-family:'Bebas Neue',cursive;font-size:clamp(28px,5vw,44px);letter-spacing:2px;color:#FFFFFF;text-align:center;margin-bottom:32px;line-height:1.1;}
+.section-title span{color:#C9921A;}
+.bullet-card{background:#0E2A38;border-left:4px solid #C9921A;padding:22px 24px;margin-bottom:14px;display:flex;gap:16px;align-items:flex-start;}
+.bullet-num{width:36px;height:36px;background:#C9921A;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:900;color:#0E2A38;flex-shrink:0;}
+.bullet-text strong{font-family:'Montserrat',sans-serif;font-size:15px;font-weight:800;color:#FFFFFF;display:block;margin-bottom:6px;}
+.bullet-text p{font-size:14px;color:#8BBFCB;line-height:1.7;}
+.testi-section{background:#164050;padding:52px 20px;}
+.testi-inner{max-width:680px;margin:0 auto;}
+.testi-card{background:#0E2A38;border-top:3px solid #C9921A;padding:28px 24px;margin-bottom:16px;position:relative;}
+.testi-card::before{content:'"';font-family:'Bebas Neue',cursive;font-size:80px;color:#C9921A;opacity:0.15;position:absolute;top:-10px;left:16px;line-height:1;}
+.testi-name{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:800;color:#C9921A;margin-bottom:6px;}
+.testi-title{font-family:'Montserrat',sans-serif;font-size:11px;color:#8BBFCB;margin-bottom:12px;letter-spacing:1px;}
+.testi-text{font-size:15px;color:#FFFFFF;line-height:1.8;font-style:italic;margin-bottom:14px;}
+.testi-result{display:inline-block;background:rgba(201,146,26,0.15);border:1px solid #C9921A;color:#C9921A;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;padding:5px 12px;}
+.about-section{background:#1A4A57;padding:52px 20px;border-top:4px solid #C9921A;}
+.about-inner{max-width:620px;margin:0 auto;text-align:center;}
+.about-section h2{font-family:'Bebas Neue',cursive;font-size:clamp(28px,5vw,44px);letter-spacing:2px;color:#FFFFFF;margin-bottom:6px;}
+.about-section h2 span{color:#C9921A;}
+.about-title{font-family:'Montserrat',sans-serif;font-size:12px;font-weight:600;color:#8BBFCB;letter-spacing:2px;margin-bottom:20px;display:block;}
+.about-section p{font-size:15px;color:#8BBFCB;line-height:1.8;}
+.about-section p strong{color:#FFFFFF;}
+.bottom-section{background:linear-gradient(180deg,#0E2A38 0%,#1A4A57 100%);padding:60px 20px;border-top:4px solid #C9921A;text-align:center;}
+.bottom-section h2{font-family:'Montserrat',sans-serif;font-size:clamp(22px,4vw,34px);font-weight:900;color:#FFFFFF;margin-bottom:14px;line-height:1.3;}
+.bottom-section h2 span{color:#C9921A;}
+.bottom-section > p{font-size:15px;color:#8BBFCB;margin-bottom:32px;line-height:1.75;max-width:520px;margin-left:auto;margin-right:auto;}
+.bottom-form{max-width:440px;margin:0 auto;}
+.bottom-form input{width:100%;background:#fff;border:2px solid #b8d8e0;color:#0E2A38;padding:14px 16px;font-size:16px;outline:none;font-family:'Open Sans',sans-serif;margin-bottom:10px;-webkit-appearance:none;}
+.bottom-form input::placeholder{color:#adc5cc;}
+.footer{background:#070F14;border-top:3px solid #876411;padding:28px 20px;text-align:center;}
+.footer p{font-family:'Montserrat',sans-serif;font-size:11px;color:#3A6070;letter-spacing:0.5px;margin-bottom:5px;}
+.footer strong{color:#C9921A;}
+.footer a{color:#3A6070;}
+.cta-link{display:inline-block;background:linear-gradient(180deg,#DFA030 0%,#C9921A 100%);border-bottom:4px solid #876411;color:#0E2A38;font-family:'Montserrat',sans-serif;font-weight:900;font-size:14px;letter-spacing:1px;text-transform:uppercase;padding:18px 36px;text-decoration:none;margin-top:8px;}
+</style>
+</head>
+<body>
+
+<div class="urgency-bar">
+  <p>⚠️ Every month you wait renting costs you wealth you'll never get back. Watch this FREE bootcamp now — limited access.</p>
+</div>
+
+<div class="header">
+  <span class="header-eyebrow">🏠 Free Home Buyer & ADU Bootcamp — California Families</span>
+  <h1>"How Everyday California Families Are<br><em>Buying Homes & Eliminating Their Mortgage</em><br>Using The ADU Method"</h1>
+  <p class="header-sub">Real estate advisor Adrian <strong>"Stretch"</strong> <span style="color:#8BBFCB;">Guerrero</span> reveals the little-known California strategy helping renters become homeowners — and turn their property into income that pays their mortgage for them.</p>
+  <div class="countdown-wrap">
+    <span class="countdown-label">⏰ Free Access Closes In</span>
+    <div class="countdown-timer">
+      <div class="cd-block"><span class="cd-num" id="hours">23</span><span class="cd-unit">Hours</span></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-block"><span class="cd-num" id="mins">47</span><span class="cd-unit">Mins</span></div>
+      <span class="cd-sep">:</span>
+      <div class="cd-block"><span class="cd-num" id="secs">00</span><span class="cd-unit">Secs</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="form-section">
+  <div class="form-wrap">
+    <div class="form-headline">Enter Your Info for Instant FREE Access</div>
+    <div class="form-sub">Where should we send your bootcamp link?</div>
+    <form id="mainForm" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label>First Name *</label>
+        <input type="text" name="firstName" placeholder="Your First Name" required autocomplete="given-name">
+      </div>
+      <div class="form-group">
+        <label>Email Address *</label>
+        <input type="email" name="email" placeholder="Your Best Email Address" required autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label>Mobile Phone — Get a Personal Text from Stretch</label>
+        <input type="tel" name="phone" placeholder="(555) 555-5555" autocomplete="tel">
+      </div>
+      <button type="submit" class="submit-btn">🏠 YES — Send Me Instant Free Access! →</button>
+    </form>
+    <div class="success-box" id="successMsg">
+      <h3>🎉 You're In!</h3>
+      <p>Check your email right now for your bootcamp access link.<br><br>
+      Watch until the end — the case studies alone will change how you see homeownership.<br><br>
+      <strong style="color:#C9921A;">Stretch will personally reach out to make sure you got in.</strong></p>
+    </div>
+    <p class="privacy">🔒 100% Private & Secure. No spam. Cancel anytime.</p>
+    <div class="trust-icons">
+      <span class="trust-item">✅ Free. No Credit Card.</span>
+      <span class="trust-item">✅ Instant Access</span>
+      <span class="trust-item">✅ Real California Families</span>
+    </div>
+  </div>
+</div>
+
+<div class="proof-bar">
+  <p>⭐⭐⭐⭐⭐ &nbsp;<span>"For the first time in my adult life... I feel like I'm winning." — Steven, Union Electrician, Los Angeles</span></p>
+</div>
+
+<div class="data-section">
+  <div class="data-inner">
+    <span class="section-eyebrow" style="text-align:center;">The Number Nobody Talks About</span>
+    <div class="big-number">40x</div>
+    <div class="big-number-label">The Net Worth Gap — Average Homeowner vs. Average Renter</div>
+    <p class="data-desc">The average homeowner in the United States has a net worth of approximately <strong>$250,000</strong>. The average renter has a net worth of approximately <strong>$6,000</strong>. That is a forty times difference. Not because homeowners earn more. Because they own an asset that works for them while they sleep.</p>
+    <a href="#bottomForm" class="cta-link">Watch the Free Bootcamp Now →</a>
+  </div>
+</div>
+
+<div class="what-section">
+  <div class="what-inner">
+    <h2 class="section-title">What You'll <span>Discover Inside</span></h2>
+    <div class="bullet-card">
+      <div class="bullet-num">1</div>
+      <div class="bullet-text">
+        <strong>The Real Wealth Gap — Renter vs. Homeowner Side by Side</strong>
+        <p>Stretch shows you the actual numbers that most people never see laid out this clearly. The average homeowner has 40x the net worth of the average renter — not because they earn more, but because they own an asset that builds wealth while they sleep.</p>
+      </div>
+    </div>
+    <div class="bullet-card">
+      <div class="bullet-num">2</div>
+      <div class="bullet-text">
+        <strong>The ADU Method — How to Buy a Home AND Get Someone Else to Pay the Mortgage</strong>
+        <p>California law now makes it possible for everyday families to add a second unit (ADU) and a Junior ADU (JADU) to their property — generating up to $2,500+/month in rental income. Stretch breaks down exactly how it works, who qualifies, and how to find the right property.</p>
+      </div>
+    </div>
+    <div class="bullet-card">
+      <div class="bullet-num">3</div>
+      <div class="bullet-text">
+        <strong>The Down Payment Myth — BUSTED</strong>
+        <p>FHA at 3.5% down. Conventional at 3%. CalHFA at 0% down. VA loans at zero down for veterans. Most California families don't know these options exist. Stretch walks through every real loan program available to you right now.</p>
+      </div>
+    </div>
+    <div class="bullet-card">
+      <div class="bullet-num">4</div>
+      <div class="bullet-text">
+        <strong>The Real Cost of Waiting — What Another Year Actually Costs You</strong>
+        <p>In 2015 the median home price in our market was $380,000. In 2025 it crossed $650,000. That's $270,000 more for the same house. Every month you wait is equity you didn't build, rental income you didn't collect, and a gap that keeps growing.</p>
+      </div>
+    </div>
+    <div class="bullet-card">
+      <div class="bullet-num">5</div>
+      <div class="bullet-text">
+        <strong>Steven, Christina & Joe — Real California Families, Real Results</strong>
+        <p>Three real people from our community who felt exactly what you're feeling right now — the doubt, the fear, the uncertainty. Watch their exact stories and see what their lives look like today. These are your neighbors. Not paid actors.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="testi-section">
+  <div class="testi-inner">
+    <span class="section-eyebrow" style="display:block;text-align:center;margin-bottom:10px;">Real People. Real Stories. Real Results.</span>
+    <h2 class="section-title" style="margin-bottom:28px;">They <span>Almost Didn't</span> Make the Call</h2>
+    <div class="testi-card">
+      <div class="testi-name">Steven</div>
+      <div class="testi-title">Union Electrician · Southern California</div>
+      <p class="testi-text">"I had been renting the same two-bedroom apartment for eleven years. In that time my rent went from $1,300 to $2,100 a month. I felt like no matter how hard I worked, I could never get ahead."</p>
+      <p style="font-size:14px;color:#8BBFCB;line-height:1.7;margin-bottom:12px;">Steven closed on a 3-bedroom home. ADU ($1,700/mo) + JADU ($950/mo). Total rental income: <strong style="color:#C9921A;">$2,650/month.</strong> Actual out-of-pocket housing cost: <strong style="color:#C9921A;">$450/month.</strong></p>
+      <span class="testi-result">✅ "For the first time in my adult life... I feel like I'm winning."</span>
+    </div>
+    <div class="testi-card">
+      <div class="testi-name">Christina</div>
+      <div class="testi-title">Medical Assistant · Single Mother of 2 · Southern California</div>
+      <p class="testi-text">"I was terrified of making the wrong move. My kids were depending on me. Every time I looked at home prices I felt sick."</p>
+      <p style="font-size:14px;color:#8BBFCB;line-height:1.7;margin-bottom:12px;">Closed with FHA at 3.5% down. ADU rents for $1,600/month. Effective housing cost: <strong style="color:#C9921A;">$1,200/month</strong> — for a home she owns.</p>
+      <span class="testi-result">✅ "I told my daughter: baby, this is our home. We're not going anywhere."</span>
+    </div>
+    <div class="testi-card">
+      <div class="testi-name">Joe</div>
+      <div class="testi-title">Small Business Owner · Already a Homeowner · Southern California</div>
+      <p class="testi-text">"Business had slowed down. I had equity in my home but I didn't want to sell. I just wanted breathing room."</p>
+      <p style="font-size:14px;color:#8BBFCB;line-height:1.7;margin-bottom:12px;">ADU + JADU conversion. Net new monthly income: <strong style="color:#C9921A;">$2,200 every single month</strong> — from a property he already owned.</p>
+      <span class="testi-result">✅ "Stretch... I sleep at night now."</span>
+    </div>
+  </div>
+</div>
+
+<div class="about-section">
+  <div class="about-inner">
+    <span class="section-eyebrow" style="display:block;margin-bottom:10px;">Your Host</span>
+    <h2>Adrian <span>"Stretch" Guerrero</span></h2>
+    <span class="about-title">Real Estate Advisor · ADU Specialist · Pico Rivera, CA</span>
+    <p>Stretch has been helping families in Southern California buy homes and build wealth for years. The nickname? He's had it since second grade — earned on the court and on the field — and he wears it with pride every single day.<br><br>
+    <strong>He has dedicated his career to making sure that families like yours have access to the same strategies, the same information, and the same opportunities that wealthy investors have been using for generations.</strong><br><br>
+    Because you deserve it. Your kids deserve it. Your grandkids deserve it.<br><br>
+    One home. Bought strategically. Can change the entire trajectory of your family's financial future.</p>
+  </div>
+</div>
+
+<div class="bottom-section" id="bottomForm">
+  <h2>Your Family's Story<br><span>Doesn't Have to Stay the Same.</span></h2>
+  <p>What is the cost of not deciding today? What does another year of rent look like? Another year of untapped equity? Another year of watching home prices climb without you?<br><br>You already know the answer. That's why you're still here.</p>
+  <div class="bottom-form">
+    <form onsubmit="handleSubmitBottom(event)">
+      <input type="text" name="firstName" placeholder="Your First Name" required autocomplete="given-name">
+      <input type="email" name="email" placeholder="Your Best Email Address" required autocomplete="email">
+      <input type="tel" name="phone" placeholder="Mobile Phone — Get a Personal Text from Stretch" autocomplete="tel">
+      <button type="submit" class="submit-btn">🏠 YES — Send Me Instant Free Access! →</button>
+    </form>
+  </div>
+  <p style="font-size:12px;color:#3A6070;margin-top:16px;">🔒 Free. No credit card. No obligations. Your info is never shared.</p>
+</div>
+
+<div class="footer">
+  <p><strong>Adrian "Stretch" Guerrero · The ADU Method</strong></p>
+  <p>adrianstretchc21@gmail.com · +1 323-404-1863 · Pico Rivera, CA</p>
+  <p style="margin-top:10px;">© 2026 The ADU Method. All rights reserved. &nbsp;|&nbsp; <a href="#">Privacy Policy</a></p>
+  <p style="margin-top:8px;font-size:10px;">Results shown are not typical. Individual results vary based on personal situation, market conditions, and effort applied.</p>
+</div>
+
+<script>
+function startCountdown(){
+  var key='aduCdEnd';
+  var end=localStorage.getItem(key);
+  if(!end){end=Date.now()+24*60*60*1000;localStorage.setItem(key,end);}
+  else{end=parseInt(end);}
+  function tick(){
+    var diff=Math.max(0,end-Date.now());
+    var h=Math.floor(diff/3600000);
+    var m=Math.floor((diff%3600000)/60000);
+    var s=Math.floor((diff%60000)/1000);
+    document.getElementById('hours').textContent=String(h).padStart(2,'0');
+    document.getElementById('mins').textContent=String(m).padStart(2,'0');
+    document.getElementById('secs').textContent=String(s).padStart(2,'0');
+    if(diff>0)setTimeout(tick,1000);
+  }
+  tick();
+}
+startCountdown();
+
+function submitToGHL(firstName,email,phone){
+  fetch('https://services.leadconnectorhq.com/hooks/MlKdrVtGVX1OE8nyMcZC/webhook-trigger/optin-bootcamp',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({firstName:firstName,email:email,phone:phone,source:'ADU Bootcamp Opt-In Page',tags:['adu-bootcamp-optin'],locationId:'MlKdrVtGVX1OE8nyMcZC'})
+  }).catch(function(){});
+}
+
+function handleSubmit(e){
+  e.preventDefault();
+  var f=e.target;
+  var fn=f.querySelector('[name="firstName"]').value.trim();
+  var em=f.querySelector('[name="email"]').value.trim();
+  var ph=f.querySelector('[name="phone"]').value.trim();
+  submitToGHL(fn,em,ph);
+  f.style.display='none';
+  document.querySelector('.form-headline').style.display='none';
+  document.querySelector('.form-sub').style.display='none';
+  document.getElementById('successMsg').style.display='block';
+  setTimeout(function(){window.location.href='https://codepen.io/Adrian-Guerrero-the-animator/full/raWzXyX';},3000);
+}
+
+function handleSubmitBottom(e){
+  e.preventDefault();
+  var f=e.target;
+  var fn=f.querySelector('[name="firstName"]').value.trim();
+  var em=f.querySelector('[name="email"]').value.trim();
+  var ph=f.querySelector('[name="phone"]').value.trim();
+  submitToGHL(fn,em,ph);
+  f.innerHTML='<div style="background:#C9921A;padding:20px;text-align:center;"><p style="font-family:Montserrat,sans-serif;font-weight:900;font-size:18px;color:#0E2A38;">🎉 You\'re In! Check your email now.</p></div>';
+  setTimeout(function(){window.location.href='https://codepen.io/Adrian-Guerrero-the-animator/full/raWzXyX';},3000);
+}
+
+document.querySelectorAll('a[href="#bottomForm"]').forEach(function(a){
+  a.addEventListener('click',function(e){e.preventDefault();document.getElementById('bottomForm').scrollIntoView({behavior:'smooth'});});
+});
+</script>
+</body>
+</html>
