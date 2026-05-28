@@ -30,20 +30,9 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 .form-wrap{max-width:500px;margin:0 auto;background:#f5fbfd;border:2px solid #1E6B8A;border-top:5px solid #C9921A;padding:36px 32px;box-shadow:0 20px 60px rgba(0,0,0,0.5);}
 .form-headline{font-family:'Montserrat',sans-serif;font-size:19px;font-weight:900;color:#1A4A57;text-align:center;margin-bottom:6px;line-height:1.3;}
 .form-sub{font-size:13px;color:#1E6B8A;text-align:center;font-style:italic;margin-bottom:22px;}
-.form-group{margin-bottom:14px;}
-.form-group label{display:block;font-family:'Montserrat',sans-serif;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#1A4A57;margin-bottom:5px;}
-.form-group input{width:100%;background:#fff;border:2px solid #b8d8e0;color:#0E2A38;padding:14px 16px;font-size:16px;outline:none;font-family:'Open Sans',sans-serif;transition:border 0.2s;-webkit-appearance:none;}
-.form-group input:focus{border-color:#C9921A;}
-.form-group input::placeholder{color:#adc5cc;}
-.submit-btn{width:100%;background:linear-gradient(180deg,#DFA030 0%,#C9921A 100%);border:none;border-bottom:5px solid #876411;color:#0E2A38;font-family:'Montserrat',sans-serif;font-weight:900;font-size:15px;letter-spacing:1px;text-transform:uppercase;padding:20px 24px;cursor:pointer;margin-top:8px;animation:btnPulse 3s infinite;}
-@keyframes btnPulse{0%,100%{box-shadow:0 0 0 0 rgba(201,146,26,0.4);}50%{box-shadow:0 0 0 12px rgba(201,146,26,0);}}
-.submit-btn:hover{opacity:0.92;}
 .privacy{font-size:11px;color:#8a9ea5;text-align:center;margin-top:12px;line-height:1.5;}
 .trust-icons{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:16px;}
 .trust-item{font-size:12px;color:#8BBFCB;font-family:'Montserrat',sans-serif;font-weight:600;}
-.success-box{display:none;padding:28px;text-align:center;}
-.success-box h3{font-family:'Bebas Neue',cursive;font-size:38px;letter-spacing:2px;color:#C9921A;margin-bottom:10px;}
-.success-box p{font-size:14px;color:#1A4A57;line-height:1.75;}
 .proof-bar{background:#0E2A38;border-top:3px solid #C9921A;border-bottom:3px solid #C9921A;padding:16px 20px;text-align:center;}
 .proof-bar p{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:#C9921A;}
 .proof-bar span{color:#8BBFCB;font-weight:400;}
@@ -80,40 +69,19 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 .bottom-section{background:linear-gradient(180deg,#0E2A38 0%,#1A4A57 100%);padding:60px 20px;border-top:4px solid #C9921A;text-align:center;}
 .bottom-section h2{font-family:'Montserrat',sans-serif;font-size:clamp(22px,4vw,34px);font-weight:900;color:#FFFFFF;margin-bottom:14px;line-height:1.3;}
 .bottom-section h2 span{color:#C9921A;}
-.bottom-form{max-width:440px;margin:0 auto;}
-.bottom-form input{width:100%;background:#fff;border:2px solid #b8d8e0;color:#0E2A38;padding:14px 16px;font-size:16px;outline:none;font-family:'Open Sans',sans-serif;margin-bottom:10px;-webkit-appearance:none;}
-.bottom-form input::placeholder{color:#adc5cc;}
+.bottom-section > p{font-size:15px;color:#8BBFCB;margin-bottom:32px;line-height:1.75;max-width:520px;margin-left:auto;margin-right:auto;}
 .footer{background:#070F14;border-top:3px solid #876411;padding:28px 20px;text-align:center;}
 .footer p{font-family:'Montserrat',sans-serif;font-size:11px;color:#3A6070;letter-spacing:0.5px;margin-bottom:5px;}
 .footer strong{color:#C9921A;}
 .footer a{color:#3A6070;}
 .cta-link{display:inline-block;background:linear-gradient(180deg,#DFA030 0%,#C9921A 100%);border-bottom:4px solid #876411;color:#0E2A38;font-family:'Montserrat',sans-serif;font-weight:900;font-size:14px;letter-spacing:1px;text-transform:uppercase;padding:18px 36px;text-decoration:none;margin-top:8px;}
-/* Hidden GHL form */
-#ghl-form-container{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;}
+
+/* GHL FORM STYLING — makes it match our design */
+#ghl-form-wrap{max-width:500px;margin:0 auto;background:#f5fbfd;border:2px solid #1E6B8A;border-top:5px solid #C9921A;padding:36px 32px;box-shadow:0 20px 60px rgba(0,0,0,0.5);}
+#ghl-form-wrap iframe{width:100%;min-height:480px;border:none;}
 </style>
 </head>
 <body>
-
-<!-- HIDDEN GHL FORM — captures leads into GoHighLevel -->
-<div id="ghl-form-container">
-  <iframe src="https://api.leadconnectorhq.com/widget/form/snFjpmkv4Zxh4PdyZSFq"
-    style="width:100%;height:100%;border:none;border-radius:8px"
-    id="inline-snFjpmkv4Zxh4PdyZSFq"
-    data-layout="{'id':'INLINE'}"
-    data-trigger-type="alwaysShow"
-    data-trigger-value=""
-    data-activation-type="alwaysActivated"
-    data-activation-value=""
-    data-deactivation-type="neverDeactivate"
-    data-deactivation-value=""
-    data-form-name="ADU Bootcamp Optin"
-    data-height="undefined"
-    data-layout-iframe-id="inline-snFjpmkv4Zxh4PdyZSFq"
-    data-form-id="snFjpmkv4Zxh4PdyZSFq"
-    title="ADU Bootcamp Optin">
-  </iframe>
-</div>
-<script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
 <div class="urgency-bar">
   <p>⚠️ Every month you wait renting costs you wealth you'll never get back. Watch this FREE bootcamp now — limited access.</p>
@@ -135,31 +103,27 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
   </div>
 </div>
 
+<!-- FORM SECTION WITH REAL GHL FORM -->
 <div class="form-section">
-  <div class="form-wrap">
+  <div id="ghl-form-wrap">
     <div class="form-headline">Enter Your Info for Instant FREE Access</div>
     <div class="form-sub">Where should we send your bootcamp link?</div>
-    <form id="mainForm" onsubmit="handleSubmit(event)">
-      <div class="form-group">
-        <label>First Name *</label>
-        <input type="text" name="firstName" placeholder="Your First Name" required autocomplete="given-name">
-      </div>
-      <div class="form-group">
-        <label>Email Address *</label>
-        <input type="email" name="email" placeholder="Your Best Email Address" required autocomplete="email">
-      </div>
-      <div class="form-group">
-        <label>Mobile Phone — Get a Personal Text from Stretch</label>
-        <input type="tel" name="phone" placeholder="(555) 555-5555" autocomplete="tel">
-      </div>
-      <button type="submit" class="submit-btn">🏠 YES — Send Me Instant Free Access! →</button>
-    </form>
-    <div class="success-box" id="successMsg">
-      <h3>🎉 You're In!</h3>
-      <p>Check your email right now for your bootcamp access link.<br><br>
-      Watch until the end — the case studies alone will change how you see homeownership.<br><br>
-      <strong style="color:#C9921A;">Stretch will personally reach out to make sure you got in.</strong></p>
-    </div>
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/form/snFjpmkv4Zxh4PdyZSFq"
+      id="inline-snFjpmkv4Zxh4PdyZSFq"
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="ADU Bootcamp Optin"
+      data-height="480"
+      data-layout-iframe-id="inline-snFjpmkv4Zxh4PdyZSFq"
+      data-form-id="snFjpmkv4Zxh4PdyZSFq"
+      title="ADU Bootcamp Optin">
+    </iframe>
     <p class="privacy">🔒 100% Private & Secure. No spam. Cancel anytime.</p>
     <div class="trust-icons">
       <span class="trust-item">✅ Free. No Credit Card.</span>
@@ -168,6 +132,7 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
     </div>
   </div>
 </div>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
 <div class="proof-bar">
   <p>⭐⭐⭐⭐⭐ &nbsp;<span>"For the first time in my adult life... I feel like I'm winning." — Steven, Union Electrician, Los Angeles</span></p>
@@ -190,21 +155,21 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
       <div class="bullet-num">1</div>
       <div class="bullet-text">
         <strong>The Real Wealth Gap — Renter vs. Homeowner Side by Side</strong>
-        <p>Stretch shows you the actual numbers that most people never see laid out this clearly. The average homeowner has 40x the net worth of the average renter — not because they earn more, but because they own an asset that builds wealth while they sleep.</p>
+        <p>The average homeowner has 40x the net worth of the average renter — not because they earn more, but because they own an asset that builds wealth while they sleep.</p>
       </div>
     </div>
     <div class="bullet-card">
       <div class="bullet-num">2</div>
       <div class="bullet-text">
         <strong>The ADU Method — How to Buy a Home AND Get Someone Else to Pay the Mortgage</strong>
-        <p>California law now makes it possible for everyday families to add a second unit (ADU) and a Junior ADU (JADU) to their property — generating up to $2,500+/month in rental income.</p>
+        <p>California law now makes it possible for everyday families to add an ADU and JADU to their property — generating up to $2,500+/month in rental income.</p>
       </div>
     </div>
     <div class="bullet-card">
       <div class="bullet-num">3</div>
       <div class="bullet-text">
         <strong>The Down Payment Myth — BUSTED</strong>
-        <p>FHA at 3.5% down. Conventional at 3%. CalHFA at 0% down. VA loans at zero down for veterans. Stretch walks through every real loan program available to you right now.</p>
+        <p>FHA at 3.5% down. Conventional at 3%. CalHFA at 0% down. VA loans at zero down for veterans. Stretch walks through every real loan program available right now.</p>
       </div>
     </div>
     <div class="bullet-card">
@@ -218,7 +183,7 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
       <div class="bullet-num">5</div>
       <div class="bullet-text">
         <strong>Steven, Christina & Joe — Real California Families, Real Results</strong>
-        <p>Three real people from our community who felt exactly what you're feeling right now. Watch their exact stories. These are your neighbors. Not paid actors.</p>
+        <p>Three real people from our community. Watch their exact stories. These are your neighbors. Not paid actors.</p>
       </div>
     </div>
   </div>
@@ -266,13 +231,12 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 <div class="bottom-section" id="bottomForm">
   <h2>Your Family's Story<br><span>Doesn't Have to Stay the Same.</span></h2>
   <p>What is the cost of not deciding today? What does another year of rent look like?<br><br>You already know the answer. That's why you're still here.</p>
-  <div class="bottom-form">
-    <form onsubmit="handleSubmitBottom(event)">
-      <input type="text" name="firstName" placeholder="Your First Name" required autocomplete="given-name">
-      <input type="email" name="email" placeholder="Your Best Email Address" required autocomplete="email">
-      <input type="tel" name="phone" placeholder="Mobile Phone — Get a Personal Text from Stretch" autocomplete="tel">
-      <button type="submit" class="submit-btn">🏠 YES — Send Me Instant Free Access! →</button>
-    </form>
+  <div id="ghl-form-wrap" style="margin-top:0;">
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/form/snFjpmkv4Zxh4PdyZSFq"
+      style="width:100%;min-height:480px;border:none;"
+      title="ADU Bootcamp Optin Bottom">
+    </iframe>
   </div>
   <p style="font-size:12px;color:#3A6070;margin-top:16px;">🔒 Free. No credit card. No obligations. Your info is never shared.</p>
 </div>
@@ -286,7 +250,7 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 
 <script>
 function startCountdown(){
-  var key='aduCdEnd2';
+  var key='aduCdEnd3';
   var end=localStorage.getItem(key);
   if(!end){end=Date.now()+24*60*60*1000;localStorage.setItem(key,end);}
   else{end=parseInt(end);}
@@ -303,49 +267,6 @@ function startCountdown(){
   tick();
 }
 startCountdown();
-
-function submitToGHL(firstName, email, phone){
-  // Submit to hidden GHL iframe form
-  var iframe = document.getElementById('inline-snFjpmkv4Zxh4PdyZSFq');
-  if(iframe && iframe.contentWindow){
-    iframe.contentWindow.postMessage({
-      type: 'form_submit',
-      data: {firstName: firstName, email: email, phone: phone}
-    }, '*');
-  }
-  // Also post directly to GHL API
-  fetch('https://api.leadconnectorhq.com/widget/form/snFjpmkv4Zxh4PdyZSFq', {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({firstName: firstName, email: email, phone: phone})
-  }).catch(function(){});
-}
-
-function handleSubmit(e){
-  e.preventDefault();
-  var f=e.target;
-  var fn=f.querySelector('[name="firstName"]').value.trim();
-  var em=f.querySelector('[name="email"]').value.trim();
-  var ph=f.querySelector('[name="phone"]').value.trim();
-  submitToGHL(fn,em,ph);
-  f.style.display='none';
-  document.querySelector('.form-headline').style.display='none';
-  document.querySelector('.form-sub').style.display='none';
-  document.getElementById('successMsg').style.display='block';
-  setTimeout(function(){window.location.href='https://codepen.io/Adrian-Guerrero-the-animator/full/raWzXyX';},3000);
-}
-
-function handleSubmitBottom(e){
-  e.preventDefault();
-  var f=e.target;
-  var fn=f.querySelector('[name="firstName"]').value.trim();
-  var em=f.querySelector('[name="email"]').value.trim();
-  var ph=f.querySelector('[name="phone"]').value.trim();
-  submitToGHL(fn,em,ph);
-  f.innerHTML='<div style="background:#C9921A;padding:20px;text-align:center;"><p style="font-family:Montserrat,sans-serif;font-weight:900;font-size:18px;color:#0E2A38;">🎉 You\'re In! Check your email now.</p></div>';
-  setTimeout(function(){window.location.href='https://codepen.io/Adrian-Guerrero-the-animator/full/raWzXyX';},3000);
-}
-
 document.querySelectorAll('a[href="#bottomForm"]').forEach(function(a){
   a.addEventListener('click',function(e){e.preventDefault();document.getElementById('bottomForm').scrollIntoView({behavior:'smooth'});});
 });
