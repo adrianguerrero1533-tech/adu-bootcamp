@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watch Now — Free ADU Bootcamp | Adrian "Stretch" Guerrero</title>
+  <meta name="description" content="Watch the Free Home Buyer & ADU Bootcamp with Adrian Stretch Guerrero. How everyday California families are buying homes and eliminating their mortgage." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── TOKENS ── */
+    :root {
+      --gold:      #D4AF37;
+      --gold-lt:   #F0CE60;
+      --teal:      #0E7B80;
+      --teal-lt:   #13A8AF;
+      --teal-dim:  #0a5558;
+      --navy:      #071E2B;
+      --navy-mid:  #0d2d3e;
+      --navy-card: #0f3344;
+      --white:     #F5F0E8;
+      --muted:     #94b3bb;
+      --border:    rgba(212,175,55,0.25);
+    }
+
+    /* ── RESET ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--navy);
+      color: var(--white);
+      font-family: 'Barlow', sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* ── TOP BANNER ── */
+    .top-banner {
+      background: var(--gold);
+      color: var(--navy);
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 13.5px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      background: var(--navy-mid);
+      border-bottom: 2px solid var(--border);
+      text-align: center;
+      padding: 20px 16px 16px;
+    }
+    .site-header .eyebrow {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--teal-lt);
+      margin-bottom: 6px;
+    }
+    .site-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.3rem, 4vw, 1.9rem);
+      color: var(--gold);
+      line-height: 1.25;
+    }
+    .site-header h1 em {
+      color: var(--white);
+      font-style: italic;
+    }
+    .host-line {
+      margin-top: 8px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .host-line strong { color: var(--white); }
+
+    /* ── MAIN CONTAINER ── */
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* ── ATTENTION BOX ── */
+    .attention-box {
+      margin: 28px auto 0;
+      background: var(--navy-card);
+      border: 1.5px solid var(--gold);
+      border-left: 5px solid var(--gold);
+      border-radius: 8px;
+      padding: 18px 20px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .attention-box .icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+    .attention-box p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--white);
+    }
+    .attention-box p strong { color: var(--gold); }
+
+    /* ── VIDEO WRAPPER ── */
+    .video-section { margin-top: 24px; }
+    .video-wrap {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid var(--teal);
+      box-shadow: 0 0 40px rgba(19,168,175,0.18);
+    }
+    .video-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+
+    /* ── CHAPTER MARKERS ── */
+    .chapters {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .chapter-btn {
+      background: var(--navy-card);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 12px 14px;
+      cursor: pointer;
+      text-align: left;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .chapter-btn:hover {
+      border-color: var(--teal-lt);
+      background: var(--teal-dim);
+    }
+    .chapter-btn .time {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gold);
+      display: block;
+      line-height: 1;
+    }
+    .chapter-btn .label {
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: block;
+      margin-top: 4px;
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 36px 0;
+    }
+
+    /* ── SECTION TITLE ── */
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.3rem, 3.5vw, 1.75rem);
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+    .section-title span { color: var(--white); }
+
+    /* ── WHAT YOU'LL LEARN ── */
+    .learn-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .learn-list li {
+      background: var(--navy-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .learn-list .num {
+      background: var(--teal);
+      color: var(--navy);
+      font-weight: 900;
+      font-size: 15px;
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .learn-list .text strong { color: var(--gold); display: block; margin-bottom: 3px; font-size: 15px; }
+    .learn-list .text p { font-size: 14px; color: var(--muted); line-height: 1.55; }
+
+    /* ── TESTIMONIAL CARDS ── */
+    .testimonial-grid { display: flex; flex-direction: column; gap: 18px; }
+    .tcard {
+      background: var(--navy-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 20px 16px;
+      position: relative;
+    }
+    .tcard::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 72px;
+      color: var(--teal);
+      opacity: 0.25;
+      position: absolute;
+      top: -10px; left: 14px;
+      line-height: 1;
+    }
+    .tcard .name {
+      font-weight: 700;
+      color: var(--white);
+      font-size: 15px;
+    }
+    .tcard .role {
+      font-size: 12.5px;
+      color: var(--teal-lt);
+      margin-bottom: 12px;
+    }
+    .tcard .quote {
+      font-size: 14.5px;
+      color: var(--white);
+      font-style: italic;
+      line-height: 1.6;
+    }
+    .tcard .result {
+      margin-top: 12px;
+      background: rgba(14,123,128,0.18);
+      border-left: 3px solid var(--teal-lt);
+      border-radius: 4px;
+      padding: 10px 12px;
+      font-size: 13.5px;
+      color: var(--white);
+    }
+    .tcard .result strong { color: var(--gold); }
+    .tcard .checkmark {
+      margin-top: 10px;
+      font-size: 13.5px;
+      color: var(--teal-lt);
+      font-weight: 600;
+    }
+
+    /* ── CTA SECTION ── */
+    .cta-section {
+      background: var(--navy-mid);
+      border: 1.5px solid var(--gold);
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: center;
+      margin: 36px 0;
+    }
+    .cta-section .headline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.2rem, 3.5vw, 1.65rem);
+      color: var(--gold);
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .cta-section .sub {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: 'Barlow', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 16px 34px;
+      border-radius: 7px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 4px 20px rgba(212,175,55,0.3);
+    }
+    .cta-btn:hover { background: var(--gold-lt); transform: translateY(-2px); }
+    .cta-note {
+      margin-top: 12px;
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+
+    /* ── HOST BIO ── */
+    .host-bio {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      background: var(--navy-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 22px 20px;
+      margin-bottom: 36px;
+    }
+    .host-avatar {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      background: var(--teal-dim);
+      border: 2px solid var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+    .host-bio h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold);
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+    .host-bio .bio-role {
+      font-size: 12px;
+      color: var(--teal-lt);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .host-bio p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy-mid);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+    footer a { color: var(--teal-lt); text-decoration: none; }
+    footer .disclaimer { margin-top: 10px; font-size: 11px; opacity: 0.65; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 540px) {
+      .chapters { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .chapter-btn { padding: 10px 11px; }
+      .chapter-btn .time { font-size: 15px; }
+      .host-bio { flex-direction: column; align-items: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BANNER -->
+  <div class="top-banner">
+    ⚠️ Watch the full training before this page comes down — limited access.
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="eyebrow">🏠 Free Home Buyer &amp; ADU Bootcamp</div>
+    <h1>"How Everyday California Families Are <em>Buying Homes &amp; Eliminating Their Mortgage</em> Using The ADU Method"</h1>
+    <p class="host-line">with <strong>Adrian "Stretch" Guerrero</strong> · Real Estate Advisor &amp; ADU Specialist</p>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <div class="container">
+
+      <!-- ATTENTION BOX -->
+      <div class="attention-box">
+        <span class="icon">⚠️</span>
+        <p><strong>Important: Watch this video all the way to the end.</strong> The most powerful part — including the real family case studies and how to get Stretch's personal help — is in the second half. Don't skip ahead. Clear your notifications, grab a notepad, and give this your full attention. <strong>Your family will thank you.</strong></p>
+      </div>
+
+      <!-- BOOKING BUTTON ABOVE VIDEO -->
+      <div style="text-align:center; margin-top:20px;">
+        <a class="cta-btn" href="https://api.leadconnectorhq.com/widget/booking/stretch-adu-call" target="_blank" rel="noopener" style="font-size:15px; padding:14px 28px;">
+          📅 Skip Ahead — Book Your Free Strategy Call →
+        </a>
+        <p style="margin-top:8px; font-size:12px; color:var(--muted);">Already seen enough? Let's talk. Free. No obligation.</p>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="video-section">
+        <div class="video-wrap">
+          <!--
+            ████████████████████████████████████████████████
+            REPLACE  1195353156  with your actual Vimeo video ID.
+            Example: if your Vimeo URL is vimeo.com/123456789
+            then replace 1195353156 with 123456789
+            ████████████████████████████████████████████████
+          -->
+          <iframe
+            src="https://player.vimeo.com/video/1195353156?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+            title="Home Buyer & ADU Bootcamp — Adrian Stretch Guerrero">
+          </iframe>
+        </div>
+
+        <!-- CHAPTER MARKERS -->
+        <div class="chapters">
+          <button class="chapter-btn" onclick="seekTo(0)">
+            <span class="time">0:00</span>
+            <span class="label">Welcome</span>
+          </button>
+          <button class="chapter-btn" onclick="seekTo(480)">
+            <span class="time">8:00</span>
+            <span class="label">Wealth Gap Data</span>
+          </button>
+          <button class="chapter-btn" onclick="seekTo(840)">
+            <span class="time">14:00</span>
+            <span class="label">The ADU Method</span>
+          </button>
+          <button class="chapter-btn" onclick="seekTo(1200)">
+            <span class="time">20:00</span>
+            <span class="label">Real Family Stories</span>
+          </button>
+        </div>
+
+        <!-- BOOKING BUTTON BELOW VIDEO -->
+        <div style="text-align:center; margin-top:18px;">
+          <a class="cta-btn" href="https://api.leadconnectorhq.com/widget/booking/stretch-adu-call" target="_blank" rel="noopener" style="font-size:15px; padding:14px 28px;">
+            📅 Ready to Talk? Book Your Free Strategy Call →
+          </a>
+          <p style="margin-top:8px; font-size:12px; color:var(--muted);">Free. No obligation. Stretch reviews your situation personally.</p>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- WHAT YOU'LL DISCOVER -->
+      <h2 class="section-title">What You'll <span>Discover Inside</span></h2>
+      <ul class="learn-list">
+        <li>
+          <span class="num">1</span>
+          <div class="text">
+            <strong>The Real Wealth Gap — Renter vs. Homeowner Side by Side</strong>
+            <p>The average homeowner has 40× the net worth of the average renter — not because they earn more, but because they own an asset that builds wealth while they sleep.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <div class="text">
+            <strong>The ADU Method — Buy a Home AND Get Someone Else to Pay the Mortgage</strong>
+            <p>California law now makes it possible for everyday families to add an ADU and JADU to their property — generating up to $2,500+/month in rental income.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <div class="text">
+            <strong>The Down Payment Myth — BUSTED</strong>
+            <p>FHA at 3.5% down. Conventional at 3%. CalHFA at 0% down. VA loans at zero for veterans. Stretch walks through every real loan program available right now.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <div class="text">
+            <strong>The Real Cost of Waiting — What Another Year Actually Costs You</strong>
+            <p>In 2015 the median home price was $380,000. In 2025 it crossed $650,000. Every month you wait is equity you didn't build and rental income you didn't collect.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">5</span>
+          <div class="text">
+            <strong>Steven, Christina &amp; Joe — Real California Families, Real Results</strong>
+            <p>Three real people from our community. Their exact stories. These are your neighbors. Not paid actors.</p>
+          </div>
+        </li>
+      </ul>
+
+      <hr class="divider" />
+
+      <!-- TESTIMONIALS -->
+      <h2 class="section-title">They Almost <span>Didn't Make the Call</span></h2>
+      <div class="testimonial-grid">
+
+        <div class="tcard">
+          <p class="name">Steven</p>
+          <p class="role">Union Electrician · Southern California</p>
+          <p class="quote">"I had been renting the same two-bedroom apartment for eleven years. In that time my rent went from $1,300 to $2,100 a month. I felt like no matter how hard I worked, I could never get ahead."</p>
+          <div class="result">ADU ($1,700/mo) + JADU ($950/mo) · Total rental income: <strong>$2,650/month</strong> · Out-of-pocket housing cost: <strong>$450/month</strong></div>
+          <p class="checkmark">✅ "For the first time in my adult life... I feel like I'm winning."</p>
+        </div>
+
+        <div class="tcard">
+          <p class="name">Christina</p>
+          <p class="role">Medical Assistant · Single Mother of 2 · Southern California</p>
+          <p class="quote">"I was terrified of making the wrong move. My kids were depending on me. Every time I looked at home prices I felt sick."</p>
+          <div class="result">Closed with FHA at 3.5% down · ADU rents for <strong>$1,600/month</strong> · Effective housing cost: <strong>$1,200/month</strong></div>
+          <p class="checkmark">✅ "I told my daughter: baby, this is our home. We're not going anywhere."</p>
+        </div>
+
+        <div class="tcard">
+          <p class="name">Joe</p>
+          <p class="role">Small Business Owner · Already a Homeowner · Southern California</p>
+          <p class="quote">"Business had slowed down. I had equity in my home but I didn't want to sell. I just wanted breathing room."</p>
+          <div class="result">ADU + JADU conversion · Net new monthly income: <strong>$2,200 every single month</strong></div>
+          <p class="checkmark">✅ "Stretch... I sleep at night now."</p>
+        </div>
+
+      </div>
+
+      <hr class="divider" />
+
+      <!-- CTA -->
+      <div class="cta-section">
+        <p class="headline">Ready to Talk? Book Your Free Strategy Call.</p>
+        <p class="sub">Stretch personally reviews your situation — no pressure, no obligation. Just a real conversation about what's possible for your family.</p>
+        <a class="cta-btn" href="https://api.leadconnectorhq.com/widget/booking/M1ggQonZLI1e611cHvZI" target="_blank" rel="noopener">
+          📅 Book My Free Strategy Call →
+        </a>
+        <p class="cta-note">🔒 Free. No credit card. Spots are limited.</p>
+      </div>
+
+      <!-- HOST BIO -->
+      <div class="host-bio">
+        <div class="host-avatar">🏠</div>
+        <div>
+          <h3>Adrian "Stretch" Guerrero</h3>
+          <p class="bio-role">Real Estate Advisor · ADU Specialist · Pico Rivera, CA</p>
+          <p>Stretch has been helping families in Southern California buy homes and build wealth for years. He has dedicated his career to making sure that families like yours have access to the same strategies that wealthy investors have been using for generations. Because you deserve it. Your kids deserve it. Your grandkids deserve it.</p>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <strong>Adrian "Stretch" Guerrero · The ADU Method</strong><br />
+    <a href="mailto:adrianstretchc21@gmail.com">adrianstretchc21@gmail.com</a> · +1 323-404-1863 · Pico Rivera, CA<br />
+    © 2026 The ADU Method. All rights reserved. |
+    <a href="/adu-bootcamp/privacy.html">Privacy Policy</a>
+    <p class="disclaimer">Results shown are not typical. Individual results vary based on personal situation, market conditions, and effort applied.</p>
+  </footer>
+
+  <!-- VIMEO API for chapter seek -->
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script>
+    var vimeoPlayer = null;
+
+    // Init player once Vimeo API is ready
+    window.addEventListener('load', function () {
+      var iframe = document.querySelector('.video-wrap iframe');
+      if (iframe && typeof Vimeo !== 'undefined') {
+        vimeoPlayer = new Vimeo.Player(iframe);
+      }
+    });
+
+    function seekTo(seconds) {
+      if (vimeoPlayer) {
+        vimeoPlayer.setCurrentTime(seconds).then(function () {
+          vimeoPlayer.play();
+          document.querySelector('.video-wrap').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>
