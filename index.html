@@ -11,12 +11,9 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
-
-/* ── NAV ── */
 .site-nav{background:#071E2B;border-bottom:2px solid rgba(201,146,26,0.35);padding:12px 20px;display:flex;justify-content:center;gap:28px;flex-wrap:wrap;}
 .site-nav a{color:#13A8AF;text-decoration:none;font-family:'Montserrat',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;}
 .site-nav a:hover{color:#C9921A;}
-
 .urgency-bar{background:#C9921A;padding:10px 20px;text-align:center;animation:pulse 2s infinite;}
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.85;}}
 .urgency-bar p{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:800;color:#0E2A38;letter-spacing:1px;}
@@ -33,14 +30,25 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 .cd-unit{font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;color:#8BBFCB;letter-spacing:2px;text-transform:uppercase;}
 .cd-sep{font-family:'Bebas Neue',cursive;font-size:44px;color:#C9921A;line-height:1;}
 .form-section{background:linear-gradient(180deg,#1A4A57 0%,#164050 100%);padding:40px 20px 52px;}
-.form-wrap{max-width:500px;margin:0 auto;background:#f5fbfd;border:2px solid #1E6B8A;border-top:5px solid #C9921A;padding:36px 32px;box-shadow:0 20px 60px rgba(0,0,0,0.5);}
+.form-box{max-width:500px;margin:0 auto;background:#f5fbfd;border:2px solid #1E6B8A;border-top:5px solid #C9921A;padding:36px 32px;box-shadow:0 20px 60px rgba(0,0,0,0.5);}
 .form-headline{font-family:'Montserrat',sans-serif;font-size:19px;font-weight:900;color:#1A4A57;text-align:center;margin-bottom:6px;line-height:1.3;}
 .form-sub{font-size:13px;color:#1E6B8A;text-align:center;font-style:italic;margin-bottom:22px;}
-.privacy{font-size:11px;color:#8a9ea5;text-align:center;margin-top:12px;line-height:1.5;}
+.form-field{margin-bottom:16px;}
+.form-field label{display:block;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;color:#1A4A57;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:6px;}
+.form-field input{width:100%;padding:12px 14px;border:1px solid #b0cdd6;border-radius:3px;font-size:14px;color:#222;font-family:'Open Sans',sans-serif;outline:none;}
+.form-field input:focus{border-color:#C9921A;}
+.sms-consent{background:#eaf4f7;border:1px solid #1E6B8A;border-left:4px solid #C9921A;padding:14px 16px;margin:16px 0;font-size:11px;color:#3a5a66;line-height:1.7;text-align:left;}
+.sms-consent a{color:#1E6B8A;text-decoration:underline;}
+.checkbox-row{display:flex;align-items:flex-start;gap:10px;margin:12px 0;font-size:12px;color:#3a5a66;line-height:1.6;}
+.checkbox-row input[type=checkbox]{margin-top:3px;flex-shrink:0;width:16px;height:16px;accent-color:#C9921A;}
+.submit-btn{width:100%;background:linear-gradient(180deg,#DFA030 0%,#C9921A 100%);border:none;border-bottom:4px solid #876411;color:#0E2A38;font-family:'Montserrat',sans-serif;font-weight:900;font-size:15px;letter-spacing:1px;text-transform:uppercase;padding:18px;cursor:pointer;margin-top:8px;}
+.submit-btn:hover{opacity:0.9;}
+.submit-btn:disabled{opacity:0.6;cursor:not-allowed;}
+.form-msg{text-align:center;margin-top:14px;font-size:13px;font-weight:600;display:none;}
+.form-msg.success{color:#1A7A6E;}
+.form-msg.error{color:#c0392b;}
 .trust-icons{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:16px;}
 .trust-item{font-size:12px;color:#8BBFCB;font-family:'Montserrat',sans-serif;font-weight:600;}
-.sms-consent{background:#eaf4f7;border:1px solid #1E6B8A;border-left:4px solid #C9921A;padding:14px 16px;margin-top:16px;font-size:11px;color:#3a5a66;line-height:1.7;text-align:left;}
-.sms-consent a{color:#1E6B8A;text-decoration:underline;}
 .proof-bar{background:#0E2A38;border-top:3px solid #C9921A;border-bottom:3px solid #C9921A;padding:16px 20px;text-align:center;}
 .proof-bar p{font-family:'Montserrat',sans-serif;font-size:13px;font-weight:700;color:#C9921A;}
 .proof-bar span{color:#8BBFCB;font-weight:400;}
@@ -78,18 +86,15 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 .bottom-section h2{font-family:'Montserrat',sans-serif;font-size:clamp(22px,4vw,34px);font-weight:900;color:#FFFFFF;margin-bottom:14px;line-height:1.3;}
 .bottom-section h2 span{color:#C9921A;}
 .bottom-section > p{font-size:15px;color:#8BBFCB;margin-bottom:32px;line-height:1.75;max-width:520px;margin-left:auto;margin-right:auto;}
+.cta-link{display:inline-block;background:linear-gradient(180deg,#DFA030 0%,#C9921A 100%);border-bottom:4px solid #876411;color:#0E2A38;font-family:'Montserrat',sans-serif;font-weight:900;font-size:14px;letter-spacing:1px;text-transform:uppercase;padding:18px 36px;text-decoration:none;margin-top:8px;}
 .footer{background:#070F14;border-top:3px solid #876411;padding:28px 20px;text-align:center;}
 .footer p{font-family:'Montserrat',sans-serif;font-size:11px;color:#3A6070;letter-spacing:0.5px;margin-bottom:5px;}
 .footer strong{color:#C9921A;}
 .footer a{color:#3A6070;}
-.cta-link{display:inline-block;background:linear-gradient(180deg,#DFA030 0%,#C9921A 100%);border-bottom:4px solid #876411;color:#0E2A38;font-family:'Montserrat',sans-serif;font-weight:900;font-size:14px;letter-spacing:1px;text-transform:uppercase;padding:18px 36px;text-decoration:none;margin-top:8px;}
-#ghl-form-wrap{max-width:500px;margin:0 auto;background:#f5fbfd;border:2px solid #1E6B8A;border-top:5px solid #C9921A;padding:36px 32px;box-shadow:0 20px 60px rgba(0,0,0,0.5);}
-#ghl-form-wrap iframe{width:100%;min-height:480px;border:none;}
 </style>
 </head>
 <body>
 
-<!-- NAVIGATION -->
 <nav class="site-nav">
   <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/">Home</a>
   <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/#about">About Stretch</a>
@@ -119,43 +124,53 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 </div>
 
 <div class="form-section">
-  <div id="ghl-form-wrap">
+  <div class="form-box">
     <div class="form-headline">Enter Your Info for Instant FREE Access</div>
     <div class="form-sub">Where should we send your bootcamp link?</div>
-    <iframe
-      src="https://api.leadconnectorhq.com/widget/form/snFjpmkv4Zxh4PdyZSFq"
-      id="inline-snFjpmkv4Zxh4PdyZSFq"
-      data-layout="{'id':'INLINE'}"
-      data-trigger-type="alwaysShow"
-      data-trigger-value=""
-      data-activation-type="alwaysActivated"
-      data-activation-value=""
-      data-deactivation-type="neverDeactivate"
-      data-deactivation-value=""
-      data-form-name="ADU Bootcamp Optin"
-      data-height="480"
-      data-layout-iframe-id="inline-snFjpmkv4Zxh4PdyZSFq"
-      data-form-id="snFjpmkv4Zxh4PdyZSFq"
-      title="ADU Bootcamp Optin">
-    </iframe>
-    <!-- SMS CONSENT — required for A2P carrier compliance -->
+
+    <div class="form-field">
+      <label for="fname">Full Name *</label>
+      <input type="text" id="fname" placeholder="Your full name" required>
+    </div>
+    <div class="form-field">
+      <label for="fphone">Phone Number *</label>
+      <input type="tel" id="fphone" placeholder="+1 (555) 000-0000" required>
+    </div>
+    <div class="form-field">
+      <label for="femail">Email Address *</label>
+      <input type="email" id="femail" placeholder="your@email.com" required>
+    </div>
+
     <div class="sms-consent">
       <strong>Vismar Real Estate · Adrian "Stretch" Guerrero</strong><br>
-      By submitting this form, you agree to receive recurring automated SMS text messages from Vismar Real Estate at the number provided. Messages may include ADU educational content, free training access, and appointment reminders. Msg frequency varies. Msg &amp; data rates may apply. Consent is not a condition of purchase. You must be 18 or older to opt in.<br><br>
-      Reply <strong>STOP</strong> to unsubscribe at any time. Reply <strong>HELP</strong> for help.<br>
-      Your information is never shared with third parties.<br>
+      By submitting this form, you may receive automated SMS text messages from Vismar Real Estate regarding ADU education, free training access, and appointment reminders. Msg frequency varies. Msg &amp; data rates may apply. Consent is not a condition of purchase. Must be 18+.<br><br>
+      Reply <strong>STOP</strong> to unsubscribe. Reply <strong>HELP</strong> for help.<br>
+      Your info is never shared with third parties.<br>
       <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
       <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/terms.html">Terms of Service</a>
     </div>
-    <p class="privacy">🔒 100% Private & Secure. No spam. Cancel anytime.</p>
-    <div class="trust-icons">
+
+    <div class="checkbox-row">
+      <input type="checkbox" id="sms-consent-check">
+      <label for="sms-consent-check">I consent to receive SMS text messages from Vismar Real Estate about home buying education and ADU strategy. Reply STOP to opt out.</label>
+    </div>
+
+    <div class="checkbox-row">
+      <input type="checkbox" id="terms-check">
+      <label for="terms-check">I agree to the <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/privacy.html" style="color:#1E6B8A;">Privacy Policy</a> and <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/terms.html" style="color:#1E6B8A;">Terms of Service</a>.</label>
+    </div>
+
+    <button class="submit-btn" id="submitBtn" onclick="submitForm()">Get Instant FREE Access →</button>
+    <div class="form-msg success" id="successMsg">✅ You're in! Check your phone for the bootcamp link.</div>
+    <div class="form-msg error" id="errorMsg">❌ Something went wrong. Please try again.</div>
+
+    <div class="trust-icons" style="margin-top:20px;">
       <span class="trust-item">✅ Free. No Credit Card.</span>
       <span class="trust-item">✅ Instant Access</span>
       <span class="trust-item">✅ Real California Families</span>
     </div>
   </div>
 </div>
-<script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
 <div class="proof-bar">
   <p>⭐⭐⭐⭐⭐ &nbsp;<span>"For the first time in my adult life... I feel like I'm winning." — Steven, Union Electrician, Los Angeles</span></p>
@@ -174,41 +189,11 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 <div class="what-section">
   <div class="what-inner">
     <h2 class="section-title">What You'll <span>Discover Inside</span></h2>
-    <div class="bullet-card">
-      <div class="bullet-num">1</div>
-      <div class="bullet-text">
-        <strong>The Real Wealth Gap — Renter vs. Homeowner Side by Side</strong>
-        <p>The average homeowner has 40x the net worth of the average renter — not because they earn more, but because they own an asset that builds wealth while they sleep.</p>
-      </div>
-    </div>
-    <div class="bullet-card">
-      <div class="bullet-num">2</div>
-      <div class="bullet-text">
-        <strong>The ADU Method — How to Buy a Home AND Get Someone Else to Pay the Mortgage</strong>
-        <p>California law now makes it possible for everyday families to add an ADU and JADU to their property — generating up to $2,500+/month in rental income.</p>
-      </div>
-    </div>
-    <div class="bullet-card">
-      <div class="bullet-num">3</div>
-      <div class="bullet-text">
-        <strong>The Down Payment Myth — BUSTED</strong>
-        <p>FHA at 3.5% down. Conventional at 3%. CalHFA at 0% down. VA loans at zero down for veterans. Stretch walks through every real loan program available right now.</p>
-      </div>
-    </div>
-    <div class="bullet-card">
-      <div class="bullet-num">4</div>
-      <div class="bullet-text">
-        <strong>The Real Cost of Waiting — What Another Year Actually Costs You</strong>
-        <p>In 2015 the median home price was $380,000. In 2025 it crossed $650,000. Every month you wait is equity you didn't build and rental income you didn't collect.</p>
-      </div>
-    </div>
-    <div class="bullet-card">
-      <div class="bullet-num">5</div>
-      <div class="bullet-text">
-        <strong>Steven, Christina & Joe — Real California Families, Real Results</strong>
-        <p>Three real people from our community. Watch their exact stories. These are your neighbors. Not paid actors.</p>
-      </div>
-    </div>
+    <div class="bullet-card"><div class="bullet-num">1</div><div class="bullet-text"><strong>The Real Wealth Gap — Renter vs. Homeowner Side by Side</strong><p>The average homeowner has 40x the net worth of the average renter — not because they earn more, but because they own an asset that builds wealth while they sleep.</p></div></div>
+    <div class="bullet-card"><div class="bullet-num">2</div><div class="bullet-text"><strong>The ADU Method — How to Buy a Home AND Get Someone Else to Pay the Mortgage</strong><p>California law now makes it possible for everyday families to add an ADU and JADU to their property — generating up to $2,500+/month in rental income.</p></div></div>
+    <div class="bullet-card"><div class="bullet-num">3</div><div class="bullet-text"><strong>The Down Payment Myth — BUSTED</strong><p>FHA at 3.5% down. Conventional at 3%. CalHFA at 0% down. VA loans at zero down for veterans.</p></div></div>
+    <div class="bullet-card"><div class="bullet-num">4</div><div class="bullet-text"><strong>The Real Cost of Waiting — What Another Year Actually Costs You</strong><p>In 2015 the median home price was $380,000. In 2025 it crossed $650,000. Every month you wait is equity you didn't build.</p></div></div>
+    <div class="bullet-card"><div class="bullet-num">5</div><div class="bullet-text"><strong>Steven, Christina & Joe — Real California Families, Real Results</strong><p>Three real people from our community. Watch their exact stories. These are your neighbors. Not paid actors.</p></div></div>
   </div>
 </div>
 
@@ -216,27 +201,9 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
   <div class="testi-inner">
     <span class="section-eyebrow" style="display:block;text-align:center;margin-bottom:10px;">Real People. Real Stories. Real Results.</span>
     <h2 class="section-title" style="margin-bottom:28px;">They <span>Almost Didn't</span> Make the Call</h2>
-    <div class="testi-card">
-      <div class="testi-name">Steven</div>
-      <div class="testi-title">Union Electrician · Southern California</div>
-      <p class="testi-text">"I had been renting the same two-bedroom apartment for eleven years. In that time my rent went from $1,300 to $2,100 a month. I felt like no matter how hard I worked, I could never get ahead."</p>
-      <p style="font-size:14px;color:#8BBFCB;line-height:1.7;margin-bottom:12px;">ADU ($1,700/mo) + JADU ($950/mo). Total rental income: <strong style="color:#C9921A;">$2,650/month.</strong> Out-of-pocket housing cost: <strong style="color:#C9921A;">$450/month.</strong></p>
-      <span class="testi-result">✅ "For the first time in my adult life... I feel like I'm winning."</span>
-    </div>
-    <div class="testi-card">
-      <div class="testi-name">Christina</div>
-      <div class="testi-title">Medical Assistant · Single Mother of 2 · Southern California</div>
-      <p class="testi-text">"I was terrified of making the wrong move. My kids were depending on me. Every time I looked at home prices I felt sick."</p>
-      <p style="font-size:14px;color:#8BBFCB;line-height:1.7;margin-bottom:12px;">Closed with FHA at 3.5% down. ADU rents for $1,600/month. Effective housing cost: <strong style="color:#C9921A;">$1,200/month.</strong></p>
-      <span class="testi-result">✅ "I told my daughter: baby, this is our home. We're not going anywhere."</span>
-    </div>
-    <div class="testi-card">
-      <div class="testi-name">Joe</div>
-      <div class="testi-title">Small Business Owner · Already a Homeowner · Southern California</div>
-      <p class="testi-text">"Business had slowed down. I had equity in my home but I didn't want to sell. I just wanted breathing room."</p>
-      <p style="font-size:14px;color:#8BBFCB;line-height:1.7;margin-bottom:12px;">ADU + JADU conversion. Net new monthly income: <strong style="color:#C9921A;">$2,200 every single month.</strong></p>
-      <span class="testi-result">✅ "Stretch... I sleep at night now."</span>
-    </div>
+    <div class="testi-card"><div class="testi-name">Steven</div><div class="testi-title">Union Electrician · Southern California</div><p class="testi-text">"I had been renting the same two-bedroom apartment for eleven years. In that time my rent went from $1,300 to $2,100 a month."</p><p style="font-size:14px;color:#8BBFCB;line-height:1.7;margin-bottom:12px;">ADU ($1,700/mo) + JADU ($950/mo). Out-of-pocket housing cost: <strong style="color:#C9921A;">$450/month.</strong></p><span class="testi-result">✅ "For the first time in my adult life... I feel like I'm winning."</span></div>
+    <div class="testi-card"><div class="testi-name">Christina</div><div class="testi-title">Medical Assistant · Single Mother of 2 · Southern California</div><p class="testi-text">"I was terrified of making the wrong move. My kids were depending on me."</p><p style="font-size:14px;color:#8BBFCB;line-height:1.7;margin-bottom:12px;">Closed with FHA at 3.5% down. ADU rents for <strong style="color:#C9921A;">$1,600/month.</strong></p><span class="testi-result">✅ "I told my daughter: baby, this is our home."</span></div>
+    <div class="testi-card"><div class="testi-name">Joe</div><div class="testi-title">Small Business Owner · Southern California</div><p class="testi-text">"Business had slowed down. I had equity in my home but I didn't want to sell."</p><p style="font-size:14px;color:#8BBFCB;line-height:1.7;margin-bottom:12px;">Net new monthly income: <strong style="color:#C9921A;">$2,200 every single month.</strong></p><span class="testi-result">✅ "Stretch... I sleep at night now."</span></div>
   </div>
 </div>
 
@@ -254,23 +221,38 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 <div class="bottom-section" id="bottomForm">
   <h2>Your Family's Story<br><span>Doesn't Have to Stay the Same.</span></h2>
   <p>What is the cost of not deciding today? What does another year of rent look like?<br><br>You already know the answer. That's why you're still here.</p>
-  <div id="ghl-form-wrap" style="margin-top:0;">
-    <iframe
-      src="https://api.leadconnectorhq.com/widget/form/snFjpmkv4Zxh4PdyZSFq"
-      style="width:100%;min-height:480px;border:none;"
-      title="ADU Bootcamp Optin Bottom">
-    </iframe>
-    <!-- SMS CONSENT — bottom form -->
+  <div class="form-box" style="margin:0 auto;text-align:left;">
+    <div class="form-headline">Get Free Instant Access Now</div>
+    <div class="form-field">
+      <label for="fname2">Full Name *</label>
+      <input type="text" id="fname2" placeholder="Your full name" required>
+    </div>
+    <div class="form-field">
+      <label for="fphone2">Phone Number *</label>
+      <input type="tel" id="fphone2" placeholder="+1 (555) 000-0000" required>
+    </div>
+    <div class="form-field">
+      <label for="femail2">Email Address *</label>
+      <input type="email" id="femail2" placeholder="your@email.com" required>
+    </div>
     <div class="sms-consent">
-      <strong>Vismar Real Estate · Adrian "Stretch" Guerrero</strong><br>
-      By submitting this form, you agree to receive recurring automated SMS text messages from Vismar Real Estate at the number provided. Messages may include ADU educational content, free training access, and appointment reminders. Msg frequency varies. Msg &amp; data rates may apply. Consent is not a condition of purchase. You must be 18 or older to opt in.<br><br>
-      Reply <strong>STOP</strong> to unsubscribe at any time. Reply <strong>HELP</strong> for help.<br>
-      Your information is never shared with third parties.<br>
+      By submitting, you may receive automated SMS from Vismar Real Estate. Msg &amp; data rates may apply. Reply <strong>STOP</strong> to opt out. Reply <strong>HELP</strong> for help. Consent is not a condition of purchase. Must be 18+.<br>
       <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
       <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/terms.html">Terms of Service</a>
     </div>
+    <div class="checkbox-row">
+      <input type="checkbox" id="sms-consent-check2">
+      <label for="sms-consent-check2">I consent to receive SMS text messages from Vismar Real Estate. Reply STOP to opt out.</label>
+    </div>
+    <div class="checkbox-row">
+      <input type="checkbox" id="terms-check2">
+      <label for="terms-check2">I agree to the <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/privacy.html" style="color:#1E6B8A;">Privacy Policy</a> and <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/terms.html" style="color:#1E6B8A;">Terms of Service</a>.</label>
+    </div>
+    <button class="submit-btn" id="submitBtn2" onclick="submitForm2()">Watch the Free Bootcamp Now →</button>
+    <div class="form-msg success" id="successMsg2">✅ You're in! Check your phone for the bootcamp link.</div>
+    <div class="form-msg error" id="errorMsg2">❌ Something went wrong. Please try again.</div>
   </div>
-  <p style="font-size:12px;color:#3A6070;margin-top:16px;">🔒 Free. No credit card. No obligations. Your info is never shared.</p>
+  <p style="font-size:12px;color:#3A6070;margin-top:16px;">🔒 Free. No credit card. No obligations.</p>
 </div>
 
 <div class="footer">
@@ -280,10 +262,77 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
     <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
     <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/terms.html">Terms of Service</a>
   </p>
-  <p style="margin-top:8px;font-size:10px;">Results shown are not typical. Individual results vary based on personal situation, market conditions, and effort applied.</p>
+  <p style="margin-top:8px;font-size:10px;">Results shown are not typical. Individual results vary.</p>
 </div>
 
 <script>
+const GHL_API = 'pit-b792e52b-b315-4c63-8c4f-46e3addc3033';
+const LOCATION_ID = 'MlKdrVtGVX1OE8nyMcZC';
+const WATCH_URL = 'https://adrianguerrero1533-tech.github.io/adu-bootcamp/watch.html?ref=adu2026';
+
+async function submitToGHL(name, phone, email, smsConsent) {
+  const nameParts = name.trim().split(' ');
+  const firstName = nameParts[0];
+  const lastName = nameParts.slice(1).join(' ') || '';
+  const body = {
+    firstName, lastName, email, phone,
+    locationId: LOCATION_ID,
+    tags: ['adu-bootcamp-optin'],
+    customFields: []
+  };
+  if (smsConsent) body.tags.push('sms-consent');
+  const res = await fetch('https://services.leadconnectorhq.com/contacts/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + GHL_API,
+      'Version': '2021-07-28'
+    },
+    body: JSON.stringify(body)
+  });
+  return res.ok;
+}
+
+async function submitForm() {
+  const name = document.getElementById('fname').value.trim();
+  const phone = document.getElementById('fphone').value.trim();
+  const email = document.getElementById('femail').value.trim();
+  const smsConsent = document.getElementById('sms-consent-check').checked;
+  if (!name || !phone || !email) { alert('Please fill in all fields.'); return; }
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+  const ok = await submitToGHL(name, phone, email, smsConsent);
+  if (ok) {
+    document.getElementById('successMsg').style.display = 'block';
+    setTimeout(() => { window.location.href = WATCH_URL; }, 1500);
+  } else {
+    document.getElementById('errorMsg').style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Get Instant FREE Access →';
+  }
+}
+
+async function submitForm2() {
+  const name = document.getElementById('fname2').value.trim();
+  const phone = document.getElementById('fphone2').value.trim();
+  const email = document.getElementById('femail2').value.trim();
+  const smsConsent = document.getElementById('sms-consent-check2').checked;
+  if (!name || !phone || !email) { alert('Please fill in all fields.'); return; }
+  const btn = document.getElementById('submitBtn2');
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+  const ok = await submitToGHL(name, phone, email, smsConsent);
+  if (ok) {
+    document.getElementById('successMsg2').style.display = 'block';
+    setTimeout(() => { window.location.href = WATCH_URL; }, 1500);
+  } else {
+    document.getElementById('errorMsg2').style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Watch the Free Bootcamp Now →';
+  }
+}
+
 function startCountdown(){
   var key='aduCdEnd3';
   var end=localStorage.getItem(key);
@@ -307,4 +356,4 @@ document.querySelectorAll('a[href="#bottomForm"]').forEach(function(a){
 });
 </script>
 </body>
-</htm
+</html>
