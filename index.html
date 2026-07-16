@@ -91,6 +91,8 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 .footer p{font-family:'Montserrat',sans-serif;font-size:11px;color:#3A6070;letter-spacing:0.5px;margin-bottom:5px;}
 .footer strong{color:#C9921A;}
 .footer a{color:#3A6070;}
+#ghl-form-wrap{max-width:500px;margin:0 auto;background:#f5fbfd;border:2px solid #1E6B8A;border-top:5px solid #C9921A;padding:36px 32px;box-shadow:0 20px 60px rgba(0,0,0,0.5);}
+#ghl-form-wrap iframe{width:100%;min-height:480px;border:none;}
 </style>
 </head>
 <body>
@@ -124,53 +126,39 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 </div>
 
 <div class="form-section">
-  <div class="form-box">
-    <div class="form-headline">Enter Your Info for Instant FREE Access</div>
-    <div class="form-sub">Where should we send your bootcamp link?</div>
-
-    <div class="form-field">
-      <label for="fname">Full Name *</label>
-      <input type="text" id="fname" placeholder="Your full name" required>
-    </div>
-    <div class="form-field">
-      <label for="fphone">Phone Number *</label>
-      <input type="tel" id="fphone" placeholder="+1 (555) 000-0000" required>
-    </div>
-    <div class="form-field">
-      <label for="femail">Email Address *</label>
-      <input type="email" id="femail" placeholder="your@email.com" required>
-    </div>
-
-    <div class="sms-consent">
+  <div id="ghl-form-wrap">
+    <div class="form-headline" style="font-family:'Montserrat',sans-serif;font-size:19px;font-weight:900;color:#1A4A57;text-align:center;margin-bottom:6px;">Enter Your Info for Instant FREE Access</div>
+    <div class="form-sub" style="font-size:13px;color:#1E6B8A;text-align:center;font-style:italic;margin-bottom:22px;">Where should we send your bootcamp link?</div>
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/form/snFjpmkv4Zxh4PdyZSFq"
+      id="inline-snFjpmkv4Zxh4PdyZSFq"
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-activation-type="alwaysActivated"
+      data-deactivation-type="neverDeactivate"
+      data-form-name="ADU Bootcamp Optin"
+      data-height="480"
+      data-layout-iframe-id="inline-snFjpmkv4Zxh4PdyZSFq"
+      data-form-id="snFjpmkv4Zxh4PdyZSFq"
+      title="ADU Bootcamp Optin">
+    </iframe>
+    <div class="sms-consent" style="background:#eaf4f7;border:1px solid #1E6B8A;border-left:4px solid #C9921A;padding:14px 16px;margin-top:16px;font-size:11px;color:#3a5a66;line-height:1.7;">
       <strong>Vismar Real Estate · Adrian "Stretch" Guerrero</strong><br>
       By submitting this form, you may receive automated SMS text messages from Vismar Real Estate regarding ADU education, free training access, and appointment reminders. Msg frequency varies. Msg &amp; data rates may apply. Consent is not a condition of purchase. Must be 18+.<br><br>
       Reply <strong>STOP</strong> to unsubscribe. Reply <strong>HELP</strong> for help.<br>
       Your info is never shared with third parties.<br>
-      <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
-      <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/terms.html">Terms of Service</a>
+      <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/privacy.html" style="color:#1E6B8A;">Privacy Policy</a> &nbsp;|&nbsp;
+      <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/terms.html" style="color:#1E6B8A;">Terms of Service</a>
     </div>
-
-    <div class="checkbox-row">
-      <input type="checkbox" id="sms-consent-check">
-      <label for="sms-consent-check">I consent to receive SMS text messages from Vismar Real Estate about home buying education and ADU strategy. Reply STOP to opt out.</label>
-    </div>
-
-    <div class="checkbox-row">
-      <input type="checkbox" id="terms-check">
-      <label for="terms-check">I agree to the <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/privacy.html" style="color:#1E6B8A;">Privacy Policy</a> and <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/terms.html" style="color:#1E6B8A;">Terms of Service</a>.</label>
-    </div>
-
-    <button class="submit-btn" id="submitBtn" onclick="submitForm()">Get Instant FREE Access →</button>
-    <div class="form-msg success" id="successMsg">✅ You're in! Check your phone for the bootcamp link.</div>
-    <div class="form-msg error" id="errorMsg">❌ Something went wrong. Please try again.</div>
-
-    <div class="trust-icons" style="margin-top:20px;">
-      <span class="trust-item">✅ Free. No Credit Card.</span>
-      <span class="trust-item">✅ Instant Access</span>
-      <span class="trust-item">✅ Real California Families</span>
+    <p style="font-size:11px;color:#8a9ea5;text-align:center;margin-top:12px;line-height:1.5;">🔒 100% Private & Secure. No spam. Cancel anytime.</p>
+    <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:16px;">
+      <span style="font-size:12px;color:#8BBFCB;font-family:'Montserrat',sans-serif;font-weight:600;">✅ Free. No Credit Card.</span>
+      <span style="font-size:12px;color:#8BBFCB;font-family:'Montserrat',sans-serif;font-weight:600;">✅ Instant Access</span>
+      <span style="font-size:12px;color:#8BBFCB;font-family:'Montserrat',sans-serif;font-weight:600;">✅ Real California Families</span>
     </div>
   </div>
 </div>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
 
 <div class="proof-bar">
   <p>⭐⭐⭐⭐⭐ &nbsp;<span>"For the first time in my adult life... I feel like I'm winning." — Steven, Union Electrician, Los Angeles</span></p>
@@ -221,36 +209,17 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 <div class="bottom-section" id="bottomForm">
   <h2>Your Family's Story<br><span>Doesn't Have to Stay the Same.</span></h2>
   <p>What is the cost of not deciding today? What does another year of rent look like?<br><br>You already know the answer. That's why you're still here.</p>
-  <div class="form-box" style="margin:0 auto;text-align:left;">
-    <div class="form-headline">Get Free Instant Access Now</div>
-    <div class="form-field">
-      <label for="fname2">Full Name *</label>
-      <input type="text" id="fname2" placeholder="Your full name" required>
-    </div>
-    <div class="form-field">
-      <label for="fphone2">Phone Number *</label>
-      <input type="tel" id="fphone2" placeholder="+1 (555) 000-0000" required>
-    </div>
-    <div class="form-field">
-      <label for="femail2">Email Address *</label>
-      <input type="email" id="femail2" placeholder="your@email.com" required>
-    </div>
-    <div class="sms-consent">
+  <div id="ghl-form-wrap" style="margin-top:0;">
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/form/snFjpmkv4Zxh4PdyZSFq"
+      style="width:100%;min-height:480px;border:none;"
+      title="ADU Bootcamp Optin Bottom">
+    </iframe>
+    <div class="sms-consent" style="background:#eaf4f7;border:1px solid #1E6B8A;border-left:4px solid #C9921A;padding:14px 16px;margin-top:16px;font-size:11px;color:#3a5a66;line-height:1.7;">
       By submitting, you may receive automated SMS from Vismar Real Estate. Msg &amp; data rates may apply. Reply <strong>STOP</strong> to opt out. Reply <strong>HELP</strong> for help. Consent is not a condition of purchase. Must be 18+.<br>
-      <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
-      <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/terms.html">Terms of Service</a>
+      <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/privacy.html" style="color:#1E6B8A;">Privacy Policy</a> &nbsp;|&nbsp;
+      <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/terms.html" style="color:#1E6B8A;">Terms of Service</a>
     </div>
-    <div class="checkbox-row">
-      <input type="checkbox" id="sms-consent-check2">
-      <label for="sms-consent-check2">I consent to receive SMS text messages from Vismar Real Estate. Reply STOP to opt out.</label>
-    </div>
-    <div class="checkbox-row">
-      <input type="checkbox" id="terms-check2">
-      <label for="terms-check2">I agree to the <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/privacy.html" style="color:#1E6B8A;">Privacy Policy</a> and <a href="https://adrianguerrero1533-tech.github.io/adu-bootcamp/terms.html" style="color:#1E6B8A;">Terms of Service</a>.</label>
-    </div>
-    <button class="submit-btn" id="submitBtn2" onclick="submitForm2()">Watch the Free Bootcamp Now →</button>
-    <div class="form-msg success" id="successMsg2">✅ You're in! Check your phone for the bootcamp link.</div>
-    <div class="form-msg error" id="errorMsg2">❌ Something went wrong. Please try again.</div>
   </div>
   <p style="font-size:12px;color:#3A6070;margin-top:16px;">🔒 Free. No credit card. No obligations.</p>
 </div>
@@ -266,73 +235,6 @@ body{font-family:'Open Sans',sans-serif;background:#0E2A38;overflow-x:hidden;}
 </div>
 
 <script>
-const GHL_API = 'pit-b792e52b-b315-4c63-8c4f-46e3addc3033';
-const LOCATION_ID = 'MlKdrVtGVX1OE8nyMcZC';
-const WATCH_URL = 'https://adrianguerrero1533-tech.github.io/adu-bootcamp/watch.html?ref=adu2026';
-
-async function submitToGHL(name, phone, email, smsConsent) {
-  const nameParts = name.trim().split(' ');
-  const firstName = nameParts[0];
-  const lastName = nameParts.slice(1).join(' ') || '';
-  const body = {
-    firstName, lastName, email, phone,
-    locationId: LOCATION_ID,
-    tags: ['adu-bootcamp-optin'],
-    customFields: []
-  };
-  if (smsConsent) body.tags.push('sms-consent');
-  const res = await fetch('https://services.leadconnectorhq.com/contacts/', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': 'Bearer ' + GHL_API,
-      'Version': '2021-07-28'
-    },
-    body: JSON.stringify(body)
-  });
-  return res.ok;
-}
-
-async function submitForm() {
-  const name = document.getElementById('fname').value.trim();
-  const phone = document.getElementById('fphone').value.trim();
-  const email = document.getElementById('femail').value.trim();
-  const smsConsent = document.getElementById('sms-consent-check').checked;
-  if (!name || !phone || !email) { alert('Please fill in all fields.'); return; }
-  const btn = document.getElementById('submitBtn');
-  btn.disabled = true;
-  btn.textContent = 'Submitting...';
-  const ok = await submitToGHL(name, phone, email, smsConsent);
-  if (ok) {
-    document.getElementById('successMsg').style.display = 'block';
-    setTimeout(() => { window.location.href = WATCH_URL; }, 1500);
-  } else {
-    document.getElementById('errorMsg').style.display = 'block';
-    btn.disabled = false;
-    btn.textContent = 'Get Instant FREE Access →';
-  }
-}
-
-async function submitForm2() {
-  const name = document.getElementById('fname2').value.trim();
-  const phone = document.getElementById('fphone2').value.trim();
-  const email = document.getElementById('femail2').value.trim();
-  const smsConsent = document.getElementById('sms-consent-check2').checked;
-  if (!name || !phone || !email) { alert('Please fill in all fields.'); return; }
-  const btn = document.getElementById('submitBtn2');
-  btn.disabled = true;
-  btn.textContent = 'Submitting...';
-  const ok = await submitToGHL(name, phone, email, smsConsent);
-  if (ok) {
-    document.getElementById('successMsg2').style.display = 'block';
-    setTimeout(() => { window.location.href = WATCH_URL; }, 1500);
-  } else {
-    document.getElementById('errorMsg2').style.display = 'block';
-    btn.disabled = false;
-    btn.textContent = 'Watch the Free Bootcamp Now →';
-  }
-}
-
 function startCountdown(){
   var key='aduCdEnd3';
   var end=localStorage.getItem(key);
